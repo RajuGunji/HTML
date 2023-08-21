@@ -1,0 +1,26 @@
+package FileHandling_FileWriters;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+public class FileWriter_using_BufferedWriter
+{
+	public static void main(String[] args) throws IOException
+	{
+		// TODO Auto-generated method stub
+		File f=new File("./BufferedWriter");
+		System.out.println(f.createNewFile());
+		String s="Hello Writer";
+		String oh="";
+		String ku="";
+		BufferedReader bf=new BufferedReader(new FileReader(f));
+		while((oh=bf.readLine())!=null)
+		{
+		}
+		BufferedWriter bfr=new BufferedWriter(new FileWriter(f));
+		bfr.write(s);
+		bfr.close();
+	}
+}

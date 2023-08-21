@@ -1,0 +1,10 @@
+package FileHandling;
+
+public class FolderCreation_in_RelativePath {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

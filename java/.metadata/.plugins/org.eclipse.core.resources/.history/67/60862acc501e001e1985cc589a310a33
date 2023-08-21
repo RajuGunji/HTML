@@ -1,0 +1,30 @@
+package FileHandling;
+import java.io.File;
+import java.io.IOException;
+public class FileCreation_Deltion_Verify
+{
+	public static void main(String[] args) throws IOException
+	{
+		File file=new File("D:/FileCreationJava.txt");
+/*		System.out.println(file.createNewFile());
+//		System.out.println(file.delete());
+//		System.out.println(file.exists());
+		if(file.exists()) 
+			file.delete();
+			System.out.println(file.createNewFile());*/
+
+//		Check File is Hidden or Not?
+//		System.out.println(file.isHidden());
+		
+//      Check File is in ReadOnly Mode or not
+		System.out.println(file.canWrite());
+		
+//		To put File into ReadOnly Mode
+		file.setWritable(false);
+		System.out.println(file.canWrite());
+		
+//		for UnCheck ReadOnly Mode
+//		file.setWritable(true);
+		
+	}
+}

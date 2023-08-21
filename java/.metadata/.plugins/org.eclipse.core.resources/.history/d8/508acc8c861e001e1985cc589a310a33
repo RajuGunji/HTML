@@ -1,0 +1,25 @@
+package FileHandling;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Read_File_By_ScannerClass 
+{
+	public static void main(String[] args) throws IOException
+	{
+		// TODO Auto-generated method stub
+		File f=new File("./ScannerRead");
+		f.createNewFile();
+		Scanner sc=new Scanner(new FileInputStream(f));
+		String s="";
+		while(sc.hasNextLine())
+		{
+			s+=sc.nextLine()+"\n";
+			System.out.println(sc.nextLine());
+		}
+		System.out.println(s);
+		sc.close();
+	}
+}

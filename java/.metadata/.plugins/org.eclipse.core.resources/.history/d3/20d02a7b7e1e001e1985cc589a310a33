@@ -1,0 +1,20 @@
+package FileHandling;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+public class Read_File_By_FileInputStream 
+{
+	public static void main(String[] args) throws IOException 
+	{
+		// TODO Auto-generated method stub
+		File f=new File("./InputFile");
+//		System.out.println(f.createNewFile());
+		
+		FileInputStream fis=new FileInputStream(f);
+		int asciee=fis.read();
+		while((asciee)!=-1)
+		{
+			System.out.print((char)asciee);
+		}
+	}
+}

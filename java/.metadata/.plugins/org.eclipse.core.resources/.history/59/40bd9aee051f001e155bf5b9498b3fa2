@@ -1,0 +1,18 @@
+package Pract;
+import java.io.File;
+import java.io.IOException;
+import java.sql.Date;
+public class Rev 
+{
+	public static void main(String[] args) throws IOException
+	{
+		// TODO Auto-generated method stub
+		File f=new File("D:\\Java-NotePad\\Files/Resume.txt");
+//		if(f.exists())
+//			f.delete();
+//			System.out.println(f.createNewFile());
+//			System.out.println(new Date(f.lastModified()));
+			System.out.println(f.isHidden());
+//		System.out.println(f.delete());
+	}
+}

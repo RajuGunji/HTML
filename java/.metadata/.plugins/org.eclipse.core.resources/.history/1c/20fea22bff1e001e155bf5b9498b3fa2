@@ -1,0 +1,12 @@
+
+import java.io.File;
+import java.io.IOException;
+public class Rev 
+{
+	public static void main(String[] args) throws IOException
+	{
+		// TODO Auto-generated method stub
+		File f=new File("D:\\D:\\Java-NotePad\\Files/Resume.txt");
+		System.out.println(f.createNewFile());	
+	}
+}

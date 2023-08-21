@@ -1,0 +1,14 @@
+package FileHandling;
+
+import java.io.File;
+
+public class FolderCreation_in_RelativePath
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		File f=new File("./RelativePath/foldercreation/");
+//		For Multiple Folders
+		System.out.println(f.mkdirs());
+	}
+}

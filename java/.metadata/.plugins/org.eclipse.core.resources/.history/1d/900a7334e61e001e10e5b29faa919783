@@ -1,0 +1,21 @@
+package FileHandling_FileWriters;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+public class FileWrite_using_FileOutputStream 
+{
+	public static void main(String[] args) throws IOException
+	{
+		File f=new File("./FileOutputStream");
+		if(f.exists())
+		System.out.println(f.delete());
+//		System.out.println(f.createNewFile());
+//		String s="Hello";
+//		FileOutputStream fo=new FileOutputStream(f);
+//		for(char ch:s.toCharArray())
+//		{
+//			fo.write((int)ch);
+//		}
+//		fo.flush();
+	}
+}

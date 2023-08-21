@@ -1,0 +1,10 @@
+package FileHandling_FileWriters;
+
+public class FileWriter_using_FileOutputStream {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

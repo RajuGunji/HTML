@@ -1,0 +1,15 @@
+package FileHandling;
+import java.io.File;
+import java.io.IOException;
+public class FileCreation_RelativePath
+{
+	public static void main(String[] args) throws IOException
+	{
+		File f=new File("./FileCreationJava.txt");
+//		System.out.println(f.createNewFile());
+		if(f.exists()) 
+			f.delete();
+			System.out.println(f.createNewFile());*/
+
+	}
+}

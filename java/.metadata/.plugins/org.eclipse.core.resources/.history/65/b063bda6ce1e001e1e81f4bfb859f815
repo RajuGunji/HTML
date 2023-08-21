@@ -1,0 +1,21 @@
+package FileHandling_FileWriters;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileWrite_using_FileWriter
+{
+	public static void main(String[] args) throws IOException
+	{
+		File f=new File("./FileWriter");
+		if(f.exists())
+			f.delete();
+		System.out.println(f.createNewFile());
+//		f.delete();
+		String s="Hello World";
+		FileWriter fr=new FileWriter(f);
+		fr.write(s);
+		System.out.println("Okay");
+	}
+}

@@ -1,0 +1,17 @@
+package FileHandling;
+
+import java.io.File;
+
+public class FolderCreation_in_RelativePath
+{
+	public static void main(String[] args) 
+	{
+/*		For Multiple Folders
+		File f=new File("./RelativePath/foldercreation/");
+		System.out.println(f.mkdirs());*/
+
+//		For creation File
+		File f=new File("./RelativePath/foldercreation/Resume.txt");
+		System.out.println(f.mkdir());
+	}
+}

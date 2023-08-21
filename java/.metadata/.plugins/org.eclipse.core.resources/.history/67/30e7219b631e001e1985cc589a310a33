@@ -1,0 +1,40 @@
+package FileHandling;
+import java.io.File;
+import java.io.IOException;
+import java.util.Arrays;
+public class PrintFiles_In_Directory 
+{
+	public static void main(String[] args) throws IOException
+	{
+//		To print Files in ProjectDirectory
+//		File f=new File("D:\\eclipse-workspace\\fullstack java\\J2SE\\CodingHub");
+/*		System.out.println(Arrays.toString(f.list()));
+//								or
+		for(String a:f.list())
+		{
+			System.out.print(a+" ");
+		}
+//		for print Overall Path
+		System.out.println(f.listFiles());
+		
+//		To print File Name from Project Directory
+		File f=new File("D:\\eclipse-workspace\\fullstack java\\J2SE\\CodingHub/FileHandling/Resume.txt");
+		System.out.println(f.getName());
+//											or
+//		To print File Name from FolderPath
+		File f1=new File("D:\\eclipse-workspace\\fullstack java\\J2SE\\CodingHub/RelativePath/folderCreation/Resume.txt");
+		System.out.println(f1.getName());
+		
+//		To Print EntirePath or AbsolutePath
+		File f=new File("D:\\eclipse-workspace\\fullstack java\\J2SE\\CodingHub/FileHandling/Resume.txt");
+		System.out.println(f.getAbsolutePath());*/
+		
+//		To Print Upto Last ParentPath i.e, FileHandling
+		File f1=new File("D:\\eclipse-workspace\\fullstack java\\J2SE\\CodingHub/RelativePath/folderCreation/Resume.txt");
+		System.out.println(f1.getParent());
+		
+//		Create new File using Parent Path
+		File f2=new File(f.getParent()+"/Resume.docx");
+		System.out.println(f2.createNewFile());
+	}
+}

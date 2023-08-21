@@ -1,0 +1,48 @@
+package Synchronization;
+public class Sync_Method
+{
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		Semi s=new Semi();
+		Final f=new Final(s);
+		Exam e=new Exam(s);
+		f.start();
+		e.start();
+	}
+}
+class Semi
+{
+	public synchronized void show(int x)
+	{
+		int i;
+		for(i=1;i<=5;i++)
+		{
+			x=x+i;
+		}
+	}
+}
+class Final extends Thread
+{
+	Semi s;
+	Final(Semi s)
+	{
+		this.s=s;
+	}
+	public void run()
+	{
+		s.show(100);
+	}
+}
+class Exam extends Thread
+{
+	Semi s;
+	Exam(Semi s)
+	{
+		this.s=s;
+	}
+	public void run()
+	{
+		s.show(200);
+	}
+}
